@@ -1,4 +1,6 @@
 {
     "mongoURI": "mongodb+srv://hatter123:hatter123@bytesphere.x2m79.mongodb.net/?retryWrites=true&w=majority&appName=ByteSphere",
-    "jwtSecret": "mytoken"
+    "jwtSecret": "mytoken",
+    "githubClientId": "Ov23licvkGDblQokibVN",
+    "githubSecret":"b846d1b60a670ee42bafc7a7b4bb2b0cdcf8dcf0"
 }
