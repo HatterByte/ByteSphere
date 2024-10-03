@@ -7,6 +7,7 @@ const { check, validationResult } = require('express-validator');
 
 const Profile = require('../../models/Profile');
 const User = require('../../models/User');
+const Post = require('../../models/Post')
 
 // @route     GET api/profile/me
 // @desc      Get current user's profile
@@ -20,7 +21,7 @@ router.get('/me',auth, async (req, res) => {
         res.json(profile);
     } catch(err){
         console.error(err.message);
-        req.statusCode(500).send('Server Error');
+        res.statusCode(500).send('Server Error');
     }
 });
 
@@ -102,7 +103,7 @@ router.post(
 
         } catch(err){
             console.error(err.message);
-            req.status(500).send('Server Error');
+            res.status(500).send('Server Error');
         }
     }
 );
@@ -142,8 +143,8 @@ router.get('/user/:user_id',async (req,res)=>{
 // @access    Private
 router.delete('/',auth,async (req,res)=>{
     try {
-        //remove posts tbd
-
+        //remove posts
+        await Post.deleteMany({ user: req.user.id });
         //remove profile
         await Profile.findOneAndDelete({user: req.user.id});
         //remove user
