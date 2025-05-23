@@ -1,6 +1,6 @@
 {
-    "mongoURI": "mongodb+srv://hatter123:hatter123@bytesphere.x2m79.mongodb.net/?retryWrites=true&w=majority&appName=ByteSphere",
-    "jwtSecret": "mytoken",
-    "githubClientId": "Ov23licvkGDblQokibVN",
-    "githubSecret":"b846d1b60a670ee42bafc7a7b4bb2b0cdcf8dcf0"
+  "mongoURI": "mongodb+srv://hatter123:hatter123@bytesphere.x2m79.mongodb.net/?retryWrites=true&w=majority&appName=ByteSphere",
+  "jwtSecret": "mytoken",
+  "githubClientId": "Ov23lig3Pqss9Tfp4AhH",
+  "githubSecret": "7bd6011de651c2cb2ef6e175cff5548418f0894d"
 }

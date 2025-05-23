@@ -1,14 +1,18 @@
 const express = require('express');
 const connectDB = require('./config/db');
+const cors = require('cors');
 
 const app = express();
-
 //Connecting database
 connectDB();
 
 //Init Middleware
 app.use(express.json({extended:false}));
 
+app.use(cors({
+  origin: 'https://bytesphere-d4zj.onrender.com',
+  credentials: true
+}));
 app.get('/',(req,res)=>res.send('API Running'));
 
 //Define routes

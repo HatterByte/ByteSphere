@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { createProfile, getCurrentProfile } from "../../actions/profile";
-import { faPhotoFilm } from "@fortawesome/free-solid-svg-icons";
 
 const EditProfile = ({
   profile: { profile, loading },
