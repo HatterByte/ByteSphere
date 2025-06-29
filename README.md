@@ -4,7 +4,7 @@ A fullstack developer community platform built using the **MERN stack** (MongoDB
 
 ##  Live Demo
 
-[🔗 Click here to visit the deployed site](https://bytesphere-3n3r.onrender.com)
+[🔗 Click here to visit the deployed site](https://byte-sphere.vercel.app/)
 
 ---
 
@@ -88,13 +88,13 @@ cd ByteSphere
 npm install
 npm run server
 ```
-### 3. Set up config in config/default.json:
+### 3. Set up .env
 ```
-{
-  "mongoURI": "your-mongo-uri",
-  "jwtSecret": "your-secret",
-  "githubClientId": "xxxxxx",
-  "githubSecret": "xxxxxxxx"
+{ 
+  MONGO_URI = <your-mongo-uri>>
+  JWT_SECRET = <your-secret>
+  GITHUB_CLIENT_ID = <xxxxxx>
+  GITHUB_SECRET= <xxxxxxxx>
 }
 ```
 ### 4. Set up the frontend

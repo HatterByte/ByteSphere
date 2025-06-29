@@ -2,7 +2,7 @@ import axios from "axios";
 
 const baseURL =
   process.env.REACT_APP_BACKEND_URL ||
-  "https://bytesphere-backend-ji9t.onrender.com";
+  "http://localhost:5000";
 
 const api = axios.create({
   baseURL,
